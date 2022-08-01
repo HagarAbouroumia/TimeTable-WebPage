@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body style="background-color:powderblue;">
+<div>
+    <row>
+        <input type="text" placeholder="Search.." id="search" name="search">
+
+        <button type="button" id="search_btn" onclick="search(document.getElementById('search').value)"> Search</button>
+        <p id="output" style="color: darkred"></p>
+
+    </row>
+</div>
+
+<div class="container">
+    <table id="tableee">
+        <thead>
+
+        <th style="padding-right: 90px">Course Name</th>
+
+
+        <th style="padding-right: 90px">Course Description</th>
+
+
+        <th style="padding-right: 90px">Department Name</th>
+
+
+        <th style="padding-right: 90px">Professor Name</th>
+
+        <tbody id="txtHint">
+        <tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<button id="show" onclick="load_more(document.getElementById('search').value)">Load More</button>
+<button id="hide">Clear</button>
+<p id="end" style="color: darkred"></p>
+
+</body>
+
+
+</html>
